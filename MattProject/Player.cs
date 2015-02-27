@@ -23,6 +23,13 @@ namespace MattProject
             Console.WriteLine(playerName + " moved from " + currentX + " to " + this.vector.x);
         }
 
+        public void MoveY(double distance)
+        {
+            double currentY = this.vector.y;
+            base.MoveX(distance);
+            Console.WriteLine(playerName + " moved from " + currentY + " to " + this.vector.y);
+        }
+
         public void PrintPlayer()
         {
             Console.WriteLine("Player: " + playerName);
